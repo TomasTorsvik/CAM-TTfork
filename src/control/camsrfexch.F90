@@ -101,6 +101,8 @@ module camsrfexch
      real(r8) :: wsy(pcols)              ! surface v-stress (N)
      real(r8) :: tref(pcols)             ! ref height surface air temp
      real(r8) :: qref(pcols)             ! ref height specific humidity 
+     real(r8) :: uas(pcols)              ! 10m zonal wind
+     real(r8) :: vas(pcols)              ! 10m meridional wind
      real(r8) :: u10(pcols)              ! 10m wind speed
      real(r8) :: ts(pcols)               ! merged surface temp 
      real(r8) :: sst(pcols)              ! sea surface temp
@@ -236,6 +238,8 @@ CONTAINS
        cam_in(c)%wsy      (:) = 0._r8
        cam_in(c)%tref     (:) = 0._r8
        cam_in(c)%qref     (:) = 0._r8
+       cam_in(c)%uas      (:) = 0._r8
+       cam_in(c)%vas      (:) = 0._r8
        cam_in(c)%u10      (:) = 0._r8
        cam_in(c)%ts       (:) = 0._r8
        cam_in(c)%sst      (:) = 0._r8

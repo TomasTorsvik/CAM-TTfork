@@ -1186,6 +1186,8 @@ contains
     call addfld ('TREFHTMN', horiz_only, 'M','K','Minimum reference height temperature over output period')
     call addfld ('TREFHTMX', horiz_only, 'X','K','Maximum reference height temperature over output period')
     call addfld ('QREFHT',   horiz_only, 'A', 'kg/kg','Reference height humidity')
+    call addfld ('UAS',      horiz_only, 'A', 'm/s','10m zonal wind')
+    call addfld ('VAS',      horiz_only, 'A', 'm/s','10m meridional wind')
     call addfld ('U10',      horiz_only, 'A', 'm/s','10m wind speed')
     call addfld ('RHREFHT',  horiz_only, 'A', 'fraction','Reference height relative humidity')
 
@@ -1307,6 +1309,8 @@ contains
       call add_default ('LANDFRAC', 1, ' ')
       call add_default ('OCNFRAC ', 1, ' ')
       call add_default ('QREFHT  ', 1, ' ')
+      call add_default ('UAS     ', 1, ' ')
+      call add_default ('VAS     ', 1, ' ')
       call add_default ('U10     ', 1, ' ')
       call add_default ('ICEFRAC ', 1, ' ')
       call add_default ('TS      ', 1, ' ')
@@ -2462,6 +2466,8 @@ contains
       call outfld('TREFHTMX', cam_in%tref,      pcols, lchnk)
       call outfld('TREFHTMN', cam_in%tref,      pcols, lchnk)
       call outfld('QREFHT',   cam_in%qref,      pcols, lchnk)
+      call outfld('UAS',      cam_in%uas,       pcols, lchnk)
+      call outfld('VAS',      cam_in%vas,       pcols, lchnk)
       call outfld('U10',      cam_in%u10,       pcols, lchnk)
       !
       ! Calculate and output reference height RH (RHREFHT)

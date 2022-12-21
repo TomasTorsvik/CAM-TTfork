@@ -68,6 +68,8 @@ contains
           cam_in(c)%snowhice(i)  =  x2a(index_x2a_Si_snowh, ig)  
           cam_in(c)%tref(i)      =  x2a(index_x2a_Sx_tref,  ig)  
           cam_in(c)%qref(i)      =  x2a(index_x2a_Sx_qref,  ig)
+          cam_in(c)%uas(i)       =  x2a(index_x2a_Sx_uas,   ig)
+          cam_in(c)%vas(i)       =  x2a(index_x2a_Sx_vas,   ig)
           cam_in(c)%u10(i)       =  x2a(index_x2a_Sx_u10,   ig)
           cam_in(c)%icefrac(i)   =  x2a(index_x2a_Sf_ifrac, ig)  
           cam_in(c)%ocnfrac(i)   =  x2a(index_x2a_Sf_ofrac, ig)
