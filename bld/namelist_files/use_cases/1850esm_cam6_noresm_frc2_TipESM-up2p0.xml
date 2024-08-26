@@ -143,7 +143,7 @@
 
 <co2_readflux_aircraft>.false.</co2_readflux_aircraft>
 <co2_readflux_fuel>.true.</co2_readflux_fuel>
-<co2flux_fuel_file>'/cluster/shared/noresm/inputdata/atm/cam/ggas/emissions-TIPMIP_CO2_anthro_surface_185001-209912_fv_1.9x2.5_c20240803.nc'</co2flux_fuel_file>
+<co2flux_fuel_file>'/cluster/shared/noresm/inputdata/atm/cam/ggas/emissions-TIPMIP_CO2_anthro_surface_185001-209912_fv_1.9x2.5_c20240823.nc'</co2flux_fuel_file>
 
 
 
